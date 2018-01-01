@@ -107,22 +107,393 @@ minethd::minethd(miner_work& pWork, size_t iNo, int iMultiway, bool no_prefetch,
 
 	switch (iMultiway)
 	{
-	case 5:
-		oWorkThd = std::thread(&minethd::penta_work_main, this);
-		break;
-	case 4:
-		oWorkThd = std::thread(&minethd::quad_work_main, this);
-		break;
-	case 3:
-		oWorkThd = std::thread(&minethd::triple_work_main, this);
-		break;
-	case 2:
-		oWorkThd = std::thread(&minethd::double_work_main, this);
-		break;
-	case 1:
-	default:
-		oWorkThd = std::thread(&minethd::work_main, this);
-		break;
+		case 1:
+			oWorkThd = std::thread(&minethd::x1_work_main, this);
+			break;
+		case 2:
+			oWorkThd = std::thread(&minethd::x2_work_main, this);
+			break;
+		case 3:
+			oWorkThd = std::thread(&minethd::x3_work_main, this);
+			break;
+		case 4:
+			oWorkThd = std::thread(&minethd::x4_work_main, this);
+			break;
+		case 5:
+			oWorkThd = std::thread(&minethd::x5_work_main, this);
+			break;
+		case 6:
+			oWorkThd = std::thread(&minethd::x6_work_main, this);
+			break;
+		case 7:
+			oWorkThd = std::thread(&minethd::x7_work_main, this);
+			break;
+		case 8:
+			oWorkThd = std::thread(&minethd::x8_work_main, this);
+			break;
+		case 9:
+			oWorkThd = std::thread(&minethd::x9_work_main, this);
+			break;
+		case 10:
+			oWorkThd = std::thread(&minethd::x10_work_main, this);
+			break;
+		case 11:
+			oWorkThd = std::thread(&minethd::x11_work_main, this);
+			break;
+		case 12:
+			oWorkThd = std::thread(&minethd::x12_work_main, this);
+			break;
+		case 13:
+			oWorkThd = std::thread(&minethd::x13_work_main, this);
+			break;
+		case 14:
+			oWorkThd = std::thread(&minethd::x14_work_main, this);
+			break;
+		case 15:
+			oWorkThd = std::thread(&minethd::x15_work_main, this);
+			break;
+		case 16:
+			oWorkThd = std::thread(&minethd::x16_work_main, this);
+			break;
+		case 17:
+			oWorkThd = std::thread(&minethd::x17_work_main, this);
+			break;
+		case 18:
+			oWorkThd = std::thread(&minethd::x18_work_main, this);
+			break;
+		case 19:
+			oWorkThd = std::thread(&minethd::x19_work_main, this);
+			break;
+		case 20:
+			oWorkThd = std::thread(&minethd::x20_work_main, this);
+			break;
+		case 21:
+			oWorkThd = std::thread(&minethd::x21_work_main, this);
+			break;
+		case 22:
+			oWorkThd = std::thread(&minethd::x22_work_main, this);
+			break;
+		case 23:
+			oWorkThd = std::thread(&minethd::x23_work_main, this);
+			break;
+		case 24:
+			oWorkThd = std::thread(&minethd::x24_work_main, this);
+			break;
+		case 25:
+			oWorkThd = std::thread(&minethd::x25_work_main, this);
+			break;
+		case 26:
+			oWorkThd = std::thread(&minethd::x26_work_main, this);
+			break;
+		case 27:
+			oWorkThd = std::thread(&minethd::x27_work_main, this);
+			break;
+		case 28:
+			oWorkThd = std::thread(&minethd::x28_work_main, this);
+			break;
+		case 29:
+			oWorkThd = std::thread(&minethd::x29_work_main, this);
+			break;
+		case 30:
+			oWorkThd = std::thread(&minethd::x30_work_main, this);
+			break;
+		case 31:
+			oWorkThd = std::thread(&minethd::x31_work_main, this);
+			break;
+		case 32:
+			oWorkThd = std::thread(&minethd::x32_work_main, this);
+			break;
+		case 33:
+			oWorkThd = std::thread(&minethd::x33_work_main, this);
+			break;
+		case 34:
+			oWorkThd = std::thread(&minethd::x34_work_main, this);
+			break;
+		case 35:
+			oWorkThd = std::thread(&minethd::x35_work_main, this);
+			break;
+		case 36:
+			oWorkThd = std::thread(&minethd::x36_work_main, this);
+			break;
+		case 37:
+			oWorkThd = std::thread(&minethd::x37_work_main, this);
+			break;
+		case 38:
+			oWorkThd = std::thread(&minethd::x38_work_main, this);
+			break;
+		case 39:
+			oWorkThd = std::thread(&minethd::x39_work_main, this);
+			break;
+		case 40:
+			oWorkThd = std::thread(&minethd::x40_work_main, this);
+			break;
+		case 41:
+			oWorkThd = std::thread(&minethd::x41_work_main, this);
+			break;
+		case 42:
+			oWorkThd = std::thread(&minethd::x42_work_main, this);
+			break;
+		case 43:
+			oWorkThd = std::thread(&minethd::x43_work_main, this);
+			break;
+		case 44:
+			oWorkThd = std::thread(&minethd::x44_work_main, this);
+			break;
+		case 45:
+			oWorkThd = std::thread(&minethd::x45_work_main, this);
+			break;
+		case 46:
+			oWorkThd = std::thread(&minethd::x46_work_main, this);
+			break;
+		case 47:
+			oWorkThd = std::thread(&minethd::x47_work_main, this);
+			break;
+		case 48:
+			oWorkThd = std::thread(&minethd::x48_work_main, this);
+			break;
+		case 49:
+			oWorkThd = std::thread(&minethd::x49_work_main, this);
+			break;
+		case 50:
+			oWorkThd = std::thread(&minethd::x50_work_main, this);
+			break;
+		case 51:
+			oWorkThd = std::thread(&minethd::x51_work_main, this);
+			break;
+		case 52:
+			oWorkThd = std::thread(&minethd::x52_work_main, this);
+			break;
+		case 53:
+			oWorkThd = std::thread(&minethd::x53_work_main, this);
+			break;
+		case 54:
+			oWorkThd = std::thread(&minethd::x54_work_main, this);
+			break;
+		case 55:
+			oWorkThd = std::thread(&minethd::x55_work_main, this);
+			break;
+		case 56:
+			oWorkThd = std::thread(&minethd::x56_work_main, this);
+			break;
+		case 57:
+			oWorkThd = std::thread(&minethd::x57_work_main, this);
+			break;
+		case 58:
+			oWorkThd = std::thread(&minethd::x58_work_main, this);
+			break;
+		case 59:
+			oWorkThd = std::thread(&minethd::x59_work_main, this);
+			break;
+		case 60:
+			oWorkThd = std::thread(&minethd::x60_work_main, this);
+			break;
+		case 61:
+			oWorkThd = std::thread(&minethd::x61_work_main, this);
+			break;
+		case 62:
+			oWorkThd = std::thread(&minethd::x62_work_main, this);
+			break;
+		case 63:
+			oWorkThd = std::thread(&minethd::x63_work_main, this);
+			break;
+		case 64:
+			oWorkThd = std::thread(&minethd::x64_work_main, this);
+			break;
+		case 65:
+			oWorkThd = std::thread(&minethd::x65_work_main, this);
+			break;
+		case 66:
+			oWorkThd = std::thread(&minethd::x66_work_main, this);
+			break;
+		case 67:
+			oWorkThd = std::thread(&minethd::x67_work_main, this);
+			break;
+		case 68:
+			oWorkThd = std::thread(&minethd::x68_work_main, this);
+			break;
+		case 69:
+			oWorkThd = std::thread(&minethd::x69_work_main, this);
+			break;
+		case 70:
+			oWorkThd = std::thread(&minethd::x70_work_main, this);
+			break;
+		case 71:
+			oWorkThd = std::thread(&minethd::x71_work_main, this);
+			break;
+		case 72:
+			oWorkThd = std::thread(&minethd::x72_work_main, this);
+			break;
+		case 73:
+			oWorkThd = std::thread(&minethd::x73_work_main, this);
+			break;
+		case 74:
+			oWorkThd = std::thread(&minethd::x74_work_main, this);
+			break;
+		case 75:
+			oWorkThd = std::thread(&minethd::x75_work_main, this);
+			break;
+		case 76:
+			oWorkThd = std::thread(&minethd::x76_work_main, this);
+			break;
+		case 77:
+			oWorkThd = std::thread(&minethd::x77_work_main, this);
+			break;
+		case 78:
+			oWorkThd = std::thread(&minethd::x78_work_main, this);
+			break;
+		case 79:
+			oWorkThd = std::thread(&minethd::x79_work_main, this);
+			break;
+		case 80:
+			oWorkThd = std::thread(&minethd::x80_work_main, this);
+			break;
+		case 81:
+			oWorkThd = std::thread(&minethd::x81_work_main, this);
+			break;
+		case 82:
+			oWorkThd = std::thread(&minethd::x82_work_main, this);
+			break;
+		case 83:
+			oWorkThd = std::thread(&minethd::x83_work_main, this);
+			break;
+		case 84:
+			oWorkThd = std::thread(&minethd::x84_work_main, this);
+			break;
+		case 85:
+			oWorkThd = std::thread(&minethd::x85_work_main, this);
+			break;
+		case 86:
+			oWorkThd = std::thread(&minethd::x86_work_main, this);
+			break;
+		case 87:
+			oWorkThd = std::thread(&minethd::x87_work_main, this);
+			break;
+		case 88:
+			oWorkThd = std::thread(&minethd::x88_work_main, this);
+			break;
+		case 89:
+			oWorkThd = std::thread(&minethd::x89_work_main, this);
+			break;
+		case 90:
+			oWorkThd = std::thread(&minethd::x90_work_main, this);
+			break;
+		case 91:
+			oWorkThd = std::thread(&minethd::x91_work_main, this);
+			break;
+		case 92:
+			oWorkThd = std::thread(&minethd::x92_work_main, this);
+			break;
+		case 93:
+			oWorkThd = std::thread(&minethd::x93_work_main, this);
+			break;
+		case 94:
+			oWorkThd = std::thread(&minethd::x94_work_main, this);
+			break;
+		case 95:
+			oWorkThd = std::thread(&minethd::x95_work_main, this);
+			break;
+		case 96:
+			oWorkThd = std::thread(&minethd::x96_work_main, this);
+			break;
+		case 97:
+			oWorkThd = std::thread(&minethd::x97_work_main, this);
+			break;
+		case 98:
+			oWorkThd = std::thread(&minethd::x98_work_main, this);
+			break;
+		case 99:
+			oWorkThd = std::thread(&minethd::x99_work_main, this);
+			break;
+		case 100:
+			oWorkThd = std::thread(&minethd::x100_work_main, this);
+			break;
+		case 101:
+			oWorkThd = std::thread(&minethd::x101_work_main, this);
+			break;
+		case 102:
+			oWorkThd = std::thread(&minethd::x102_work_main, this);
+			break;
+		case 103:
+			oWorkThd = std::thread(&minethd::x103_work_main, this);
+			break;
+		case 104:
+			oWorkThd = std::thread(&minethd::x104_work_main, this);
+			break;
+		case 105:
+			oWorkThd = std::thread(&minethd::x105_work_main, this);
+			break;
+		case 106:
+			oWorkThd = std::thread(&minethd::x106_work_main, this);
+			break;
+		case 107:
+			oWorkThd = std::thread(&minethd::x107_work_main, this);
+			break;
+		case 108:
+			oWorkThd = std::thread(&minethd::x108_work_main, this);
+			break;
+		case 109:
+			oWorkThd = std::thread(&minethd::x109_work_main, this);
+			break;
+		case 110:
+			oWorkThd = std::thread(&minethd::x110_work_main, this);
+			break;
+		case 111:
+			oWorkThd = std::thread(&minethd::x111_work_main, this);
+			break;
+		case 112:
+			oWorkThd = std::thread(&minethd::x112_work_main, this);
+			break;
+		case 113:
+			oWorkThd = std::thread(&minethd::x113_work_main, this);
+			break;
+		case 114:
+			oWorkThd = std::thread(&minethd::x114_work_main, this);
+			break;
+		case 115:
+			oWorkThd = std::thread(&minethd::x115_work_main, this);
+			break;
+		case 116:
+			oWorkThd = std::thread(&minethd::x116_work_main, this);
+			break;
+		case 117:
+			oWorkThd = std::thread(&minethd::x117_work_main, this);
+			break;
+		case 118:
+			oWorkThd = std::thread(&minethd::x118_work_main, this);
+			break;
+		case 119:
+			oWorkThd = std::thread(&minethd::x119_work_main, this);
+			break;
+		case 120:
+			oWorkThd = std::thread(&minethd::x120_work_main, this);
+			break;
+		case 121:
+			oWorkThd = std::thread(&minethd::x121_work_main, this);
+			break;
+		case 122:
+			oWorkThd = std::thread(&minethd::x122_work_main, this);
+			break;
+		case 123:
+			oWorkThd = std::thread(&minethd::x123_work_main, this);
+			break;
+		case 124:
+			oWorkThd = std::thread(&minethd::x124_work_main, this);
+			break;
+		case 125:
+			oWorkThd = std::thread(&minethd::x125_work_main, this);
+			break;
+		case 126:
+			oWorkThd = std::thread(&minethd::x126_work_main, this);
+			break;
+		case 127:
+			oWorkThd = std::thread(&minethd::x127_work_main, this);
+			break;
+		case 128:
+			oWorkThd = std::thread(&minethd::x128_work_main, this);
+			break;
+		default:
+			oWorkThd = std::thread(&minethd::work_main, this);
+			break;
 	}
 
 	order_guard.wait();
@@ -169,7 +540,7 @@ cryptonight_ctx* minethd::minethd_alloc_ctx()
 	return nullptr; //Should never happen
 }
 
-static constexpr size_t MAX_N = 5;
+static constexpr size_t MAX_N = 130;
 bool minethd::self_test()
 {
 	alloc_msg msg = { 0 };
@@ -541,6 +912,518 @@ void minethd::quad_work_main()
 void minethd::penta_work_main()
 {
 	multiway_work_main<5>(func_multi_selector(5, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero()));
+}
+
+void minethd::x1_work_main(){
+	multiway_work_main<1>(func_multi_selector(1, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x2_work_main(){
+	multiway_work_main<2>(func_multi_selector(2, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x3_work_main(){
+	multiway_work_main<3>(func_multi_selector(3, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x4_work_main(){
+	multiway_work_main<4>(func_multi_selector(4, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x5_work_main(){
+	multiway_work_main<5>(func_multi_selector(5, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x6_work_main(){
+	multiway_work_main<6>(func_multi_selector(6, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x7_work_main(){
+	multiway_work_main<7>(func_multi_selector(7, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x8_work_main(){
+	multiway_work_main<8>(func_multi_selector(8, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x9_work_main(){
+	multiway_work_main<9>(func_multi_selector(9, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x10_work_main(){
+	multiway_work_main<10>(func_multi_selector(10, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x11_work_main(){
+	multiway_work_main<11>(func_multi_selector(11, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x12_work_main(){
+	multiway_work_main<12>(func_multi_selector(12, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x13_work_main(){
+	multiway_work_main<13>(func_multi_selector(13, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x14_work_main(){
+	multiway_work_main<14>(func_multi_selector(14, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x15_work_main(){
+	multiway_work_main<15>(func_multi_selector(15, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x16_work_main(){
+	multiway_work_main<16>(func_multi_selector(16, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x17_work_main(){
+	multiway_work_main<17>(func_multi_selector(17, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x18_work_main(){
+	multiway_work_main<18>(func_multi_selector(18, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x19_work_main(){
+	multiway_work_main<19>(func_multi_selector(19, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x20_work_main(){
+	multiway_work_main<20>(func_multi_selector(20, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x21_work_main(){
+	multiway_work_main<21>(func_multi_selector(21, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x22_work_main(){
+	multiway_work_main<22>(func_multi_selector(22, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x23_work_main(){
+	multiway_work_main<23>(func_multi_selector(23, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x24_work_main(){
+	multiway_work_main<24>(func_multi_selector(24, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x25_work_main(){
+	multiway_work_main<25>(func_multi_selector(25, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x26_work_main(){
+	multiway_work_main<26>(func_multi_selector(26, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x27_work_main(){
+	multiway_work_main<27>(func_multi_selector(27, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x28_work_main(){
+	multiway_work_main<28>(func_multi_selector(28, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x29_work_main(){
+	multiway_work_main<29>(func_multi_selector(29, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x30_work_main(){
+	multiway_work_main<30>(func_multi_selector(30, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x31_work_main(){
+	multiway_work_main<31>(func_multi_selector(31, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x32_work_main(){
+	multiway_work_main<32>(func_multi_selector(32, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x33_work_main(){
+	multiway_work_main<33>(func_multi_selector(33, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x34_work_main(){
+	multiway_work_main<34>(func_multi_selector(34, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x35_work_main(){
+	multiway_work_main<35>(func_multi_selector(35, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x36_work_main(){
+	multiway_work_main<36>(func_multi_selector(36, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x37_work_main(){
+	multiway_work_main<37>(func_multi_selector(37, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x38_work_main(){
+	multiway_work_main<38>(func_multi_selector(38, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x39_work_main(){
+	multiway_work_main<39>(func_multi_selector(39, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x40_work_main(){
+	multiway_work_main<40>(func_multi_selector(40, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x41_work_main(){
+	multiway_work_main<41>(func_multi_selector(41, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x42_work_main(){
+	multiway_work_main<42>(func_multi_selector(42, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x43_work_main(){
+	multiway_work_main<43>(func_multi_selector(43, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x44_work_main(){
+	multiway_work_main<44>(func_multi_selector(44, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x45_work_main(){
+	multiway_work_main<45>(func_multi_selector(45, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x46_work_main(){
+	multiway_work_main<46>(func_multi_selector(46, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x47_work_main(){
+	multiway_work_main<47>(func_multi_selector(47, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x48_work_main(){
+	multiway_work_main<48>(func_multi_selector(48, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x49_work_main(){
+	multiway_work_main<49>(func_multi_selector(49, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x50_work_main(){
+	multiway_work_main<50>(func_multi_selector(50, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x51_work_main(){
+	multiway_work_main<51>(func_multi_selector(51, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x52_work_main(){
+	multiway_work_main<52>(func_multi_selector(52, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x53_work_main(){
+	multiway_work_main<53>(func_multi_selector(53, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x54_work_main(){
+	multiway_work_main<54>(func_multi_selector(54, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x55_work_main(){
+	multiway_work_main<55>(func_multi_selector(55, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x56_work_main(){
+	multiway_work_main<56>(func_multi_selector(56, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x57_work_main(){
+	multiway_work_main<57>(func_multi_selector(57, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x58_work_main(){
+	multiway_work_main<58>(func_multi_selector(58, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x59_work_main(){
+	multiway_work_main<59>(func_multi_selector(59, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x60_work_main(){
+	multiway_work_main<60>(func_multi_selector(60, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x61_work_main(){
+	multiway_work_main<61>(func_multi_selector(61, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x62_work_main(){
+	multiway_work_main<62>(func_multi_selector(62, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x63_work_main(){
+	multiway_work_main<63>(func_multi_selector(63, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x64_work_main(){
+	multiway_work_main<64>(func_multi_selector(64, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x65_work_main(){
+	multiway_work_main<65>(func_multi_selector(65, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x66_work_main(){
+	multiway_work_main<66>(func_multi_selector(66, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x67_work_main(){
+	multiway_work_main<67>(func_multi_selector(67, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x68_work_main(){
+	multiway_work_main<68>(func_multi_selector(68, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x69_work_main(){
+	multiway_work_main<69>(func_multi_selector(69, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x70_work_main(){
+	multiway_work_main<70>(func_multi_selector(70, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x71_work_main(){
+	multiway_work_main<71>(func_multi_selector(71, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x72_work_main(){
+	multiway_work_main<72>(func_multi_selector(72, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x73_work_main(){
+	multiway_work_main<73>(func_multi_selector(73, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x74_work_main(){
+	multiway_work_main<74>(func_multi_selector(74, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x75_work_main(){
+	multiway_work_main<75>(func_multi_selector(75, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x76_work_main(){
+	multiway_work_main<76>(func_multi_selector(76, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x77_work_main(){
+	multiway_work_main<77>(func_multi_selector(77, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x78_work_main(){
+	multiway_work_main<78>(func_multi_selector(78, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x79_work_main(){
+	multiway_work_main<79>(func_multi_selector(79, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x80_work_main(){
+	multiway_work_main<80>(func_multi_selector(80, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x81_work_main(){
+	multiway_work_main<81>(func_multi_selector(81, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x82_work_main(){
+	multiway_work_main<82>(func_multi_selector(82, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x83_work_main(){
+	multiway_work_main<83>(func_multi_selector(83, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x84_work_main(){
+	multiway_work_main<84>(func_multi_selector(84, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x85_work_main(){
+	multiway_work_main<85>(func_multi_selector(85, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x86_work_main(){
+	multiway_work_main<86>(func_multi_selector(86, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x87_work_main(){
+	multiway_work_main<87>(func_multi_selector(87, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x88_work_main(){
+	multiway_work_main<88>(func_multi_selector(88, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x89_work_main(){
+	multiway_work_main<89>(func_multi_selector(89, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x90_work_main(){
+	multiway_work_main<90>(func_multi_selector(90, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x91_work_main(){
+	multiway_work_main<91>(func_multi_selector(91, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x92_work_main(){
+	multiway_work_main<92>(func_multi_selector(92, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x93_work_main(){
+	multiway_work_main<93>(func_multi_selector(93, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x94_work_main(){
+	multiway_work_main<94>(func_multi_selector(94, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x95_work_main(){
+	multiway_work_main<95>(func_multi_selector(95, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x96_work_main(){
+	multiway_work_main<96>(func_multi_selector(96, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x97_work_main(){
+	multiway_work_main<97>(func_multi_selector(97, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x98_work_main(){
+	multiway_work_main<98>(func_multi_selector(98, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x99_work_main(){
+	multiway_work_main<99>(func_multi_selector(99, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x100_work_main(){
+	multiway_work_main<100>(func_multi_selector(100, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x101_work_main(){
+	multiway_work_main<101>(func_multi_selector(101, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x102_work_main(){
+	multiway_work_main<102>(func_multi_selector(102, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x103_work_main(){
+	multiway_work_main<103>(func_multi_selector(103, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x104_work_main(){
+	multiway_work_main<104>(func_multi_selector(104, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x105_work_main(){
+	multiway_work_main<105>(func_multi_selector(105, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x106_work_main(){
+	multiway_work_main<106>(func_multi_selector(106, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x107_work_main(){
+	multiway_work_main<107>(func_multi_selector(107, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x108_work_main(){
+	multiway_work_main<108>(func_multi_selector(108, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x109_work_main(){
+	multiway_work_main<109>(func_multi_selector(109, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x110_work_main(){
+	multiway_work_main<110>(func_multi_selector(110, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x111_work_main(){
+	multiway_work_main<111>(func_multi_selector(111, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x112_work_main(){
+	multiway_work_main<112>(func_multi_selector(112, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x113_work_main(){
+	multiway_work_main<113>(func_multi_selector(113, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x114_work_main(){
+	multiway_work_main<114>(func_multi_selector(114, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x115_work_main(){
+	multiway_work_main<115>(func_multi_selector(115, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x116_work_main(){
+	multiway_work_main<116>(func_multi_selector(116, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x117_work_main(){
+	multiway_work_main<117>(func_multi_selector(117, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x118_work_main(){
+	multiway_work_main<118>(func_multi_selector(118, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x119_work_main(){
+	multiway_work_main<119>(func_multi_selector(119, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x120_work_main(){
+	multiway_work_main<120>(func_multi_selector(120, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x121_work_main(){
+	multiway_work_main<121>(func_multi_selector(121, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x122_work_main(){
+	multiway_work_main<122>(func_multi_selector(122, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x123_work_main(){
+	multiway_work_main<123>(func_multi_selector(123, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x124_work_main(){
+	multiway_work_main<124>(func_multi_selector(124, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x125_work_main(){
+	multiway_work_main<125>(func_multi_selector(125, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x126_work_main(){
+	multiway_work_main<126>(func_multi_selector(126, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x127_work_main(){
+	multiway_work_main<127>(func_multi_selector(127, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
+}
+
+void minethd::x128_work_main(){
+	multiway_work_main<128>(func_multi_selector(128, ::jconf::inst()->HaveHardwareAes(), bNoPrefetch, ::jconf::inst()->IsCurrencyMonero())); 
 }
 
 template<size_t N>
